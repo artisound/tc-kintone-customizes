@@ -1,0 +1,24 @@
+{
+    "appID": 4822,
+    "appName": "minna_categories",
+    "type": "Customization",
+    "scope": "ALL",
+    "uploadConfig": {
+        "desktop": {
+            "js": [
+                "https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js",
+                "https://cdn.jsdelivr.net/npm/axios@0.26.1/dist/axios.min.js",
+                "https://unpkg.com/element-ui/lib/index.js",
+                "minna_categories/dist/minna_categories.min.js"
+            ],
+            "css": [
+                "https://unpkg.com/element-ui/lib/theme-chalk/index.css"
+            ]
+        },
+        "mobile": {
+            "js": [
+                "minna_categories/dist/minna_categories.min.js"
+            ]
+        }
+    }
+}

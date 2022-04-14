@@ -1,0 +1,35 @@
+{
+  "name": "minna_get_categories",
+  "version": "0.0.1",
+  "description": "kintone customization project",
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@kintone/kintone-js-sdk": "^0.7.4"
+  },
+  "devDependencies": {
+    "local-web-server": "^2.6.1",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.2.3",
+    "babel-loader": "^8.0.5",
+    "style-loader": "^0.23.1",
+    "css-loader": "^2.1.0",
+    "core-js": "^3.2.1",
+    "regenerator-runtime": "^0.13.3",
+    "@babel/core": "^7.3.3",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/plugin-proposal-class-properties": "^7.3.3",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@kintone/customize-uploader": "^2.0.5",
+    "eslint": "^6.5.1",
+    "@cybozu/eslint-config": ">=7.1.0"
+  },
+  "scripts": {
+    "dev": "ws",
+    "build-minna_categories": "webpack --config minna_categories/webpack.config.js",
+    "lint-all": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "lint-all-fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
+    "lint-minna_categories": "eslint minna_categories/ --ext .js",
+    "lint-minna_categories-fix": "eslint minna_categories/ --ext .js --fix"
+  }
+}
